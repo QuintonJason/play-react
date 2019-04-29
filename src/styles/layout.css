@@ -1,0 +1,32 @@
+.l-body {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+
+  /* Uncomment when postCSS is added */
+  /* @media (max-width: 849px) {
+    grid-template-areas: "header" "sidebar"  "body" "footer";
+  }
+
+  @media (min-width: 850px) {
+    grid-template-areas: "footer" "sidebar" "body" " header";
+  } */
+
+}
+
+.dy-header {
+  grid-area: header;
+}
+
+.dy-body {
+  grid-area: main;
+}
+
+.dy-footer {
+  grid-area: footer;
+}
+.dy-sidebar {
+  grid-area: sidebar;
+}
