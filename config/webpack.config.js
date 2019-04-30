@@ -94,9 +94,8 @@ module.exports = function(webpackEnv) {
           ident: 'postcss',
           plugins: () => [
             require('postcss-nested'),
-            require('postcss-partial-import'),
             require('postcss-custom-properties'),
-            require('postcss-inline-scg'),
+            require('postcss-inline-svg'),
             require('postcss-hexrgba'),
             require('postcss-discard-comments'),
             require('postcss-flexbugs-fixes'),
