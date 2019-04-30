@@ -93,10 +93,24 @@ module.exports = function(webpackEnv) {
           // https://github.com/facebook/create-react-app/issues/2677
           ident: 'postcss',
           plugins: () => [
+            require('postcss-nested'),
+            require('postcss-partial-import'),
+            require('postcss-custom-properties'),
+            require('postcss-inline-scg'),
+            require('postcss-hexrgba'),
+            require('postcss-discard-comments'),
             require('postcss-flexbugs-fixes'),
             require('postcss-preset-env')({
               autoprefixer: {
                 flexbox: 'no-2009',
+                browsers: [
+                  'last 2 Chrome versions',
+                  'last 2 Safari versions',
+                  'last 2 Firefox versions',
+                  'last 2 Edge versions',
+                  'last 2 ios versions',
+                  'last 2 ChromeAndroid versions'
+                ]
               },
               stage: 3,
             }),
@@ -309,7 +323,7 @@ module.exports = function(webpackEnv) {
               options: {
                 formatter: require.resolve('react-dev-utils/eslintFormatter'),
                 eslintPath: require.resolve('eslint'),
-                
+
               },
               loader: require.resolve('eslint-loader'),
             },
@@ -342,7 +356,7 @@ module.exports = function(webpackEnv) {
                 customize: require.resolve(
                   'babel-preset-react-app/webpack-overrides'
                 ),
-                
+
                 plugins: [
                   [
                     require.resolve('babel-plugin-named-asset-import'),
@@ -381,7 +395,7 @@ module.exports = function(webpackEnv) {
                 ],
                 cacheDirectory: true,
                 cacheCompression: isEnvProduction,
-                
+
                 // If an error happens in a package, it's possible to be
                 // because it was compiled. Thus, we don't want the browser
                 // debugger to show the original code. Instead, the code

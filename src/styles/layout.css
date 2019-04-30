@@ -1,18 +1,17 @@
 .l-body {
   display: grid;
-  grid-template-areas:
-    "header header"
-    "sidebar main"
-    "footer footer";
 
   /* Uncomment when postCSS is added */
-  /* @media (max-width: 849px) {
+  @media (max-width: 849px) {
     grid-template-areas: "header" "sidebar"  "body" "footer";
   }
 
   @media (min-width: 850px) {
-    grid-template-areas: "footer" "sidebar" "body" " header";
-  } */
+    grid-template-areas:
+      "header header"
+      "sidebar body"
+      "footer footer";
+  }
 
 }
 
