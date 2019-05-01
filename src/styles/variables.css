@@ -1,0 +1,34 @@
+:root {
+  /* BASE COLORS */
+  --color-black: #000;
+  --color-white: #fff;
+
+  /* BRAND COLORS */
+  --color-brand-primary: #58a4b0;
+  --color-brand-primary-alt: #417881;
+  --color-brand-secondary: #daa49a;
+
+  /* GRAYS */
+  --color-gray-1: #fcfcfc;
+  --color-gray-2: #adadad;
+  --color-gray-3: #999;
+  --color-gray-4: #4d4d4d;
+  --color-gray-5: #1b1b1b;
+
+  /* FONT FAMILIES */
+  --font-source-sans: "Source Sans", sans-serif;
+
+
+  /* FONT WEIGHTS */
+  --weight-regular: 400;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  --weight-black: 900;
+
+
+  /* GLOBAL MEASUREMENTS */
+  --global-gutter: 16px;
+
+  /* TRANSITION */
+  --global-transition: .3s ease;
+}

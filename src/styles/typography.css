@@ -1,0 +1,50 @@
+/* TYPE SCALE */
+:root {
+  --type-scale-12: .75rem;
+  --type-scale-16: 1rem;
+  --type-scale-20: 1.25rem;
+  --type-scale-24: 1.5rem;
+  --type-scale-32: 2rem;
+}
+
+.t-display {
+  font-weight: var(--weight-bold);
+  @media (max-width: 799px) {
+    font-size: var(--type-scale-24);
+  }
+  @media (min-width: 800px) {
+    font-size: var(--type-scale-32);
+  }
+}
+
+.t-body {
+  font-size: var(--type-scale-16);
+  font-weight: var(--weight-book);
+  line-height: 1.556;
+}
+
+.t-link {
+  border-bottom: 1px dotted var(--color-black);
+  transition: .2s ease border-bottom, .2s ease color;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: var(--color-black);
+    border-bottom-style: solid;
+    border-bottom-color: var(--color-black);
+  }
+}
+
+/* UTILITY  */
+/* Hidden text */
+.t-hidden {
+  padding: 0;
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(0 0 99.9% 99.9%);
+  overflow: hidden;
+  border: 0;
+}
