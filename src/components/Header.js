@@ -3,12 +3,10 @@ import '../styles/components/header.css';
 
 
 // Stateless React Component
-const Header = () => {
-  return  (
-    <header className="dy-header">
-      This is my header
-    </header>
-  )
-}
+const Header = () => (
+  <header className="dy-header">
+    This is my header
+  </header>
+)
 
 export default Header;
