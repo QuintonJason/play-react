@@ -1,7 +1,7 @@
-import React, {Component} from 'react';
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
 
+// import global components
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Main from "./components/Main";
@@ -9,9 +9,9 @@ import Sidebar from "./components/Sidebar";
 
 function App() {
   return (
-    <div className="App l-body">
+    <div className="l-body">
       <Header />
-      <Main />
+      <Main className="testing" />
       <Sidebar />
       <Footer />
     </div>

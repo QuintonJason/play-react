@@ -1,7 +1,5 @@
 .l-body {
   display: grid;
-
-  /* Uncomment when postCSS is added */
   @media (max-width: 849px) {
     grid-template-areas: "header" "sidebar"  "body" "footer";
   }
@@ -12,7 +10,6 @@
       "sidebar body"
       "footer footer";
   }
-
 }
 
 .dy-header {
