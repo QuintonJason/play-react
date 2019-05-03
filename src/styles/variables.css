@@ -27,7 +27,9 @@
 
 
   /* GLOBAL MEASUREMENTS */
-  --global-gutter: 16px;
+  --dy-gutter: 16px;
+  --dy-button-border-focus-radius: 6px;
+  --dy-button-border-radius: 4px;
 
   /* TRANSITION */
   --global-transition: .3s ease;

@@ -24,10 +24,9 @@ export default class Button extends Component {
     return (
       <button className={`dy-button ${disabledClass}`} onClick={this.toggleIsDisabled}>
         {this.props.buttonText && (
-          <span className="t-hidden">{this.props.buttonText}</span>
+          <span className="dy-button__text">{this.props.buttonText}</span>
           )
         }
-        {this.props.buttonText}
       </button>
     );
   }

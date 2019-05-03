@@ -4,7 +4,6 @@ import Button from "./Button";
 
 // Stateless React Component
 const Main = (props) => {
-  console.log(props);
   return  (
     <main className="dy-main">
       This is my main
@@ -12,7 +11,7 @@ const Main = (props) => {
         buttonText="Quinton"
         isDisabled={true}
       />
-      <Button  buttonText="Button 2" />
+      <Button buttonText="Button 2" />
     </main>
   )
 }
